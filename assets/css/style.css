@@ -190,18 +190,18 @@ header {
 .section-aboutus {
     display: flex;
 }
-.section-aboutus--left {
+.section-aboutus-left {
     flex: 1;
 }
-.section-aboutus--left p {
+.section-aboutus-left p {
     font-size: 14px;
     line-height: 25px;
 }
-.section-aboutus--right {
+.section-aboutus-right {
     width: 520px;
     text-align: center;
 }
-.section-aboutus--right img {
+.section-aboutus-right img {
     width: 480px;
     box-shadow: 0px 5px 10px #333;
 }
@@ -937,12 +937,12 @@ footer {
     .section-aboutus { 
     flex-direction: column;
     }
-    .section-aboutus--left {
+    .section-aboutus-left {
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 30px;
     }
-    .section-aboutus--right {
+    .section-aboutus-right {
         width: auto;
     }
     .section-services {
