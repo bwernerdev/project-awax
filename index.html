@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
     <header>
@@ -19,8 +20,8 @@
                 </div>
             </div>
             <div class="menu">
-                <img class="menu-hamburguer" src="./assets/images/icones/menu.png">
-                <nav>
+                <img class="menu-hamburguer" src="./assets/images/icones/menu.png" onclick="clickMenu()">
+                <nav id="itens">
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
@@ -73,12 +74,12 @@
             </div>
             <div class="section-body">
                 <div class="section-aboutus">
-                    <div class="section-aboutus--left">
+                    <div class="section-aboutus-left">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor pellentesque erat, nec molestie purus sagittis sit amet. In venenatis sagittis ante, eu iaculis nisl tristique eu. Donec iaculis elit a mauris mattis luctus. Phasellus vitae erat a leo pulvinar pharetra eu in ante. Duis commodo ut enim ut ullamcorper. Vivamus maximus ornare dapibus. Aenean quam felis, vehicula nec imperdiet a, vestibulum at risus. </p><br>
 
                         <a href="" class="button">Learn More</a>
                     </div>
-                    <div class="section-aboutus--right">
+                    <div class="section-aboutus-right">
                         <img src="./media/complementos/foto4.jpg" alt="Foto de pessoas no computador.">
                     </div>
                 </div>
@@ -383,18 +384,30 @@
                 </div>
         </section>
 
-        <section>
-            <div class="section-all-clients">
-                <div class="all-clients">
-                <a href=""><img src="./media/complementos/empresa1.png"></a>
-                <a href=""><img src="./media/complementos/empresa2.png"></a>
-                <a href=""><img src="./media/complementos/empresa3.png"></a>
-                <a href=""><img src="./media/complementos/empresa4.png"></a>
-                <a href=""><img src="./media/complementos/empresa5.png"></a>
-                <a href=""><img src="./media/complementos/empresa6.png"></a>
+        <section class="default section-companies">
+        <div class="section-body">
+            <div class="section-companies-area">
+                <div class="section-company">
+                    <img src="./media/complementos/empresa1.png" />
+                </div>
+                <div class="section-company">
+                    <img src="./media/complementos/empresa2.png" />
+                </div>
+                <div class="section-company">
+                    <img src="./media/complementos/empresa3.png" />
+                </div>
+                <div class="section-company">
+                    <img src="./media/complementos/empresa4.png" />
+                </div>
+                <div class="section-company">
+                    <img src="./media/complementos/empresa5.png" />
+                </div>
+                <div class="section-company">
+                    <img src="./media/complementos/empresa6.png" />
+                </div>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
         <section class="default light">
             <div class="section-prices-area">
@@ -673,8 +686,8 @@
 
     </main>
     <footer>
-        <div class="footer--area">
-            <div class="footer--item area1">
+        <div class="footer-area">
+            <div class="footer-item area1">
                 <div class="footer-social">
                     <a href=""><img src="./assets/images/icones/twitter.png" /></a>
                     <a href=""><img src="./assets/images/icones/linkedin.png" /></a>
@@ -683,10 +696,10 @@
                     <a href=""><img src="./assets/images/icones/pinterest.png" /></a>
                 </div>
             </div>
-            <div class="footer--item area2">
+            <div class="footer-item area2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus quam, sed pellentesque quam. Vestibulum porta aliquet risus, ac rhoncus sem aliquet ac. Donec tincidunt cursus elit vitae euismod.
             </div>
-            <div class="footer--item area3">
+            <div class="footer-item area3">
                 <form method="POST">
                     <input type="email" name="email" placeholder="EMAIL TO SUBSCRIBE" />
                     <button class="button-form">Subscribe</button>
@@ -694,5 +707,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
